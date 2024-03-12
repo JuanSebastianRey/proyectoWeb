@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: var(--color-body);
@@ -20,7 +21,6 @@ body{
 .head h1{
     color: var(--color-word-titles);
     margin: 20px 0 0 80px;
-    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 500;
 }
