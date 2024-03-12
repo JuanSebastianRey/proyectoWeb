@@ -86,15 +86,14 @@ body{
 .au button{
     background: var(--color-word-titles);
     color: var(--color-word-paragraph);
-    cursor: pointer;
     width: 17%;
     height: 6%;
     margin: 0 0 10px 0;
     font-size: 2vh;
     border-style: none;
-    transition: color transform 1s ease-in-out;
 }
 .au button:hover{
+    transition: 0.2s ease-in;
     cursor: pointer;
     transform: scale(1.2);
     color:var(--color-body);
@@ -165,7 +164,7 @@ body{
 }
 .texto button:hover{
     cursor: pointer;
-    transition: 0.1s ease;
+    transition: 0.2s ease-in;
     transform: scale(1.2);
     color:var(--color-body);
 }
