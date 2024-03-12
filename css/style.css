@@ -6,9 +6,12 @@
     padding: 0;
     box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 body{
     background-color: var(--color-body);
+    height: 200vh;
+    width: 100%;
 }
 .head{
     display: grid;
@@ -16,17 +19,17 @@ body{
     grid-template-areas: 
     "food list";
     width: 100%;
-    height: 10vh;
+    height: auto;
 }
 .head h1{
     color: var(--color-word-titles);
     margin: 20px 0 0 80px;
-    font-style: italic;
     font-weight: 500;
 }
 .head li{
     list-style: none;
     color: var(--color-word-paragraph);
+    transition: 0.3s ease;
 }
 
 .head a{
@@ -34,8 +37,8 @@ body{
 
 }
 .head li:hover{
-    transform: scale(1.2);
-    transition: 0.5s ease;
+    cursor: pointer;
+    transform: scale(1.1);
     color: var(--color-word-titles)
 }
 .menu{
@@ -43,7 +46,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin: 20px 0 0 0;
-    font-size: 25px;
+    font-size: 2vh;
 }
 .food{
     grid-area: food
@@ -53,11 +56,14 @@ body{
     grid-template: 1fr / repeat(2,1fr);
     grid-template-areas:
     "texto home";
-    height: 50vh;
+    height: auto;
     width: 100%;
 }
 .image{
     grid-area: home;
+}
+.image img{
+    object-fit: contain;
 }
 .au{
     display: flex;
@@ -68,12 +74,13 @@ body{
 }
 .au h1{
     color:var(--color-word-titles);
-    margin: 0 0 10px 0;
+    margin: 0 0 1% 0;
     font-size: 10vh;
+    font-weight: 400;
 }
 .au p{
     color: var(--color-word-paragraph);
-    margin: 0 0 10px 0;
+    margin: 0 0 1% 0;
     font-size: 3vh;
 }
 .au button{
@@ -84,10 +91,81 @@ body{
     height: 6%;
     margin: 0 0 10px 0;
     font-size: 2vh;
+    border-style: none;
+    transition: color transform 1s ease-in-out;
 }
 .au button:hover{
     cursor: pointer;
-    transition: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    color:var(--color-body);
+}
+.container-home{
+    height: 91vh;
+    width: 100%;
+}
+.container_about{
+    border: 1px red solid ;
+    height: 100vh;
+    width: 100%;
+}
+.about{
+    display: grid;
+    grid-template: 1fr / repeat(2,1fr);
+    grid-template-areas: 
+    "special texto ";
+    width: 100%;
+    height: 100vh;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    grid-area: texto
+} 
+.about h1{
+    color: var(--color-word-titles);
+    font-size: 2vh;
+    font-weight: 400;
+    margin-bottom:1%;
+}
+.about p{
+    color: var(--color-word-paragraph);
+}
+.p1{
+    font-size: 6vh;
+    margin-bottom:1%;
+}
+.p2{
+    font-size: 2vh;
+    margin-bottom:1%;
+}
+.image-about{
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+}
+.image-about img{
+    height: 60vh;
+    width: 70%;
+    margin-left: 10%;
+}
+.texto button{
+    background: var(--color-word-titles);
+    color: var(--color-word-paragraph);
+    cursor: pointer;
+    width: 16%;
+    height: 4%;
+    margin: 0 0 10px 0;
+    font-size: 2vh;
+    border-style: none;
+    margin:1% 0 0 1%;
+}
+.texto button:hover{
+    cursor: pointer;
+    transition: 0.1s ease;
+    transform: scale(1.2);
     color:var(--color-body);
 }
