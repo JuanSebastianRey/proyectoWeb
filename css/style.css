@@ -48,3 +48,46 @@ body{
 .food{
     grid-area: food
 }
+.home{
+    display: grid;
+    grid-template: 1fr / repeat(2,1fr);
+    grid-template-areas:
+    "texto home";
+    height: 50vh;
+    width: 100%;
+}
+.image{
+    grid-area: home;
+}
+.au{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.au h1{
+    color:var(--color-word-titles);
+    margin: 0 0 10px 0;
+    font-size: 10vh;
+}
+.au p{
+    color: var(--color-word-paragraph);
+    margin: 0 0 10px 0;
+    font-size: 3vh;
+}
+.au button{
+    background: var(--color-word-titles);
+    color: var(--color-word-paragraph);
+    cursor: pointer;
+    width: 17%;
+    height: 6%;
+    margin: 0 0 10px 0;
+    font-size: 2vh;
+}
+.au button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+    color:var(--color-body);
+}
