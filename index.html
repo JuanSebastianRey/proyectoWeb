@@ -10,26 +10,26 @@
 </head>
 
 <body>
-    <header class="head">
-        <h1 class="food">Foods</h1>
-        <ul class="menu">
-            <a href="#">
-                <li class="itemh">Home</li>
-            </a>
-            <a href="#">
-                <li class="itemh">About</li>
-            </a>
-            <a href="#">
-                <li class="itemh">Menu</li>
-            </a>
-            <a href="#">
-                <li class="itemh">Service</li>
-            </a>
-            <a href="#">
-                <li class="itemh">Contact</li>
-            </a>
-        </ul>
-    </header>
+        <header class="head" id="Home">
+            <h1 class="food">Foods</h1>
+            <ul class="menu">
+                <a href="#Home">
+                    <li class="itemh">Home</li>
+                </a>
+                <a href="#About">
+                    <li class="itemh">About</li>
+                </a>
+                <a href="#Menu">
+                    <li class="itemh">Menu</li>
+                </a>
+                <a href="#Service">
+                    <li class="itemh">Service</li>
+                </a>
+                <a href="#Contact">
+                    <li class="itemh">Contact</li>
+                </a>
+            </ul>
+        </header>
     <main>
         <section class="container-home">
             <nav class="home">
@@ -44,7 +44,7 @@
                 </div>
             </nav>
         </section>
-        <section class="container_about">
+        <section class="container_about" id="About">
             <nav class="about">
                 <aside class="texto">
                     <h1>About Us</h1>
@@ -64,30 +64,36 @@
                 </article>
             </nav>
         </section>
-        <section class="container-price">
+        <section class="container-price" id="Menu">
             <nav class="container-food">
                 <div class="foods">
                     <h1>Food Menu</h1>
                     <p>Fresh taste and grat price</p>
                 </div>
-                <div class="img1"><img src="storage/img/food1.png" alt="food1" />
+                <div class="img1">
+                    <i class='bx bx-bookmark'></i>
+                    <img src="storage/img/food1.png" alt="food1" />
                     <h2>Chicken Burger</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
                 </div>
-                <div class="img2"><img src="storage/img/food2.png" alt="food2" />
+                <div class="img2">
+                    <i class='bx bx-bookmark'></i>
+                    <img src="storage/img/food2.png" alt="food2" />
                     <h2>Special Beef Burger</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
                 </div>
-                <div class="img3"><img src="storage/img/food3.png" alt="food3" />
+                <div class="img3">
+                    <i class='bx bx-bookmark'></i>
+                    <img src="storage/img/food3.png" alt="food3" />
                     <h2>Chicken Fry Pack</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
-                </div> 
+                </div>
             </nav>
         </section>
-        <section class="container-services">
+        <section class="container-services" id="Service">
             <nav class="container-we">
                 <div class="best">
                     <h1>Services</h1>
@@ -104,18 +110,73 @@
                     <p>It is a long established </p>
                     <p>be distracted by the readable </p>
                     <p>looking at its layout. </p>
-                    
+
                 </div>
                 <div class="img6"><img src="storage/img/s3.png" alt="food3" />
                     <h1>Dellivered</h1>
                     <p>It is a long established</p>
                     <p>be distracted by the readable </p>
                     <p>looking at its layout.</p>
-                    
-                </div> 
+
+                </div>
             </nav>
         </section>
+        <section class="container-make">
+            <article class="container-every">
+                <div>
+                    <h2>We make quality food</h2>
+                    <h2>Everyday</h2>
+                    <button>Learn More</button>
+                </div>
+            </article>
+        </section>
     </main>
+    <footer id="Contact">
+        <nav class="container-footer">
+            <ul class="menu2"><h2>Menu links</h2>
+                <a href="#Home">
+                    <li class="itemh">Home</li>
+                </a>
+                <a href="#About">
+                    <li>About</li>
+                </a>
+                <a href="#Menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#Service">
+                    <li>Service</li>
+                </a>
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <ul class="Our"><h2>Our Servive</h2>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Marketing</li>
+                <li>Product Management</li>
+                <li>Graphic Design</li>
+            </ul>
+            <ul class="Information">
+                <h2>Information</h2>
+                <li>About Us</li>
+                <li>Delivery Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+            <ul class="us">
+                <h2>Contact Us</h2>
+                <div class="social-icons">
+                    <li><i class='bx bxl-facebook-circle'></i></li>
+                    <li><i class='bx bxl-instagram-alt'></i></li>
+                    <li><i class='bx bx-x'></i></li>
+                    <li><i class='bx bxl-tiktok'></i></li>
+                </div>
+            </ul>
+            
+        </nav>
+    </footer>
 </body>
 
 </html>
+<!-- id="Contact" -->
