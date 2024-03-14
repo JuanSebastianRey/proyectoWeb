@@ -1,3 +1,6 @@
 :root{
+    --color-body:purple;
     --color-primary: #ffff;
+    --color-menu: #999999;
+    --color-ite-menu: pink;
 }
