@@ -10,9 +10,11 @@
 </head>
 
 <body>
-        <header class="head" id="Home">
-            <h1 class="food">Foods</h1>
-            <ul class="menu">
+    <header class="head">
+        <h1 class="food">Foods</h1>
+        <ul class="menu">
+            <input type="checkbox" id="check">
+            <span class="menus">
                 <a href="#Home">
                     <li class="itemh">Home</li>
                 </a>
@@ -28,20 +30,22 @@
                 <a href="#Contact">
                     <li class="itemh">Contact</li>
                 </a>
-            </ul>
-        </header>
+                <label for="check" class="close-menu"><i class='bx bx-x'></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class='bx bxs-food-menu' style='color:#ff702a'></i></label>
+        </ul>
+    </header>
     <main>
-        <section class="container-home">
+        <section class="container-home" id="Home">
             <nav class="home">
                 <div class="image"><img src="storage/img/home.png" alt="home" /></div>
                 <div class="au">
-                    <h1>Full Website</h1>
-                    <p>
-                        Foods the <br />
-                        Most precious thing
-                    </p>
-                    <button>Today's Menu</button>
+                    <h1 class="title">Full Website</h1>
+                    <p>Foods the </p>
+                    <p>Most precious thing</p>
+                    <div class="b1"><button>Today's Menu</button></div>
                 </div>
+
             </nav>
         </section>
         <section class="container_about" id="About">
@@ -49,14 +53,13 @@
                 <aside class="texto">
                     <h1>About Us</h1>
                     <p class="p1">
-                        We speak the good <br />
-                        food language
-                    </p>
-                    <p class="p2">
-                        It is a long established fact that a <br />
-                        be distracted by the readable content <br />
-                        looking at its layout. The point of
-                    </p>
+                        We speak the good </p>
+                    <p class="p1">food language</p>
+                    <div class="p2">
+                        <p>It is a long established fact that a</p>
+                        <p>be distracted by the readable content</p>
+                        <p>looking at its layout. The point of</p>
+                    </div>
                     <button>Learn More</button>
                 </aside>
                 <article class="image-about">
@@ -71,25 +74,26 @@
                     <p>Fresh taste and grat price</p>
                 </div>
                 <div class="img1">
-                    <i class='bx bx-bookmark'></i>
+                    <div class="book"><i class='bx bx-bookmark'></i></div>
                     <img src="storage/img/food1.png" alt="food1" />
                     <h2>Chicken Burger</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
                 </div>
                 <div class="img2">
-                    <i class='bx bx-bookmark'></i>
+                    <div class="book"><i class='bx bx-bookmark'></i></div>
                     <img src="storage/img/food2.png" alt="food2" />
                     <h2>Special Beef Burger</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
                 </div>
                 <div class="img3">
-                    <i class='bx bx-bookmark'></i>
+                    <div class="book"><i class='bx bx-bookmark'></i></div>
                     <img src="storage/img/food3.png" alt="food3" />
                     <h2>Chicken Fry Pack</h2>
                     <h3>Tasty Food</h3>
                     <h1>$11.00</h1>
+                </div>
                 </div>
             </nav>
         </section>
@@ -99,31 +103,38 @@
                     <h1>Services</h1>
                     <p>We provide best food services</p>
                 </div>
-                <div class="img4"><img src="storage/img/s1.png" alt="food1" />
-                    <h1>Order</h1>
-                    <p>It is a long established </p>
-                    <p>be distracted by the readable </p>
-                    <p>looking at its layout. </p>
+                <div class="img4">
+                    <img src="storage/img/s1.png" alt="food1" />
+                    <div class="we">
+                        <h1>Order</h1>
+                        <p>It is a long established </p>
+                        <p>be distracted by the readable </p>
+                        <p>looking at its layout. </p>
+                    </div>
                 </div>
-                <div class="img5"><img src="storage/img/s2.png" alt="food2" />
-                    <h1>Shipping</h1>
-                    <p>It is a long established </p>
-                    <p>be distracted by the readable </p>
-                    <p>looking at its layout. </p>
-
+                <div class="img5">
+                    <img src="storage/img/s2.png" alt="food2" />
+                    <div class="we">
+                        <h1>Shipping</h1>
+                        <p>It is a long established </p>
+                        <p>be distracted by the readable </p>
+                        <p>looking at its layout. </p>
+                    </div>
                 </div>
-                <div class="img6"><img src="storage/img/s3.png" alt="food3" />
-                    <h1>Dellivered</h1>
-                    <p>It is a long established</p>
-                    <p>be distracted by the readable </p>
-                    <p>looking at its layout.</p>
-
+                <div class="img6">
+                    <img src="storage/img/s3.png" alt="food3" />
+                    <div class="we">
+                        <h1>Dellivered</h1>
+                        <p>It is a long established</p>
+                        <p>be distracted by the readable </p>
+                        <p>looking at its layout.</p>
+                    </div>
                 </div>
             </nav>
         </section>
         <section class="container-make">
             <article class="container-every">
-                <div>
+                <div class="container-every_2">
                     <h2>We make quality food</h2>
                     <h2>Everyday</h2>
                     <button>Learn More</button>
@@ -133,7 +144,8 @@
     </main>
     <footer id="Contact">
         <nav class="container-footer">
-            <ul class="menu2"><h2>Menu links</h2>
+            <ul class="menu2">
+                <h2>Menu links</h2>
                 <a href="#Home">
                     <li class="itemh">Home</li>
                 </a>
@@ -150,7 +162,8 @@
                     <li>Contact</li>
                 </a>
             </ul>
-            <ul class="Our"><h2>Our Servive</h2>
+            <ul class="Our">
+                <h2>Our Servive</h2>
                 <li>Web Design</li>
                 <li>Web Development</li>
                 <li>Marketing</li>
@@ -173,7 +186,7 @@
                     <li><i class='bx bxl-tiktok'></i></li>
                 </div>
             </ul>
-            
+
         </nav>
     </footer>
 </body>
