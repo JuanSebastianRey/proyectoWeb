@@ -45,20 +45,21 @@ p {
 
 .head li {
     list-style: none;
-    color: var(--color-word-paragraph);
 }
 
 .head a {
     text-decoration: none;
+    color: var(--color-word-paragraph);
 }
 
 .head li:hover {
     cursor: pointer;
     transition: 0.1s ease;
     transform: scale(1.1);
-    color: var(--color-word-titles);
 }
-
+.head a:hover{
+    color: var(--color-word-titles)
+}
 .menu {
     display: flex;
     width: 100%;
@@ -539,6 +540,7 @@ footer {
 }
 
 .menu2 a:hover {
+    cursor: pointer;
     color: var(--color-word-titles);
 }
 
